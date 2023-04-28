@@ -13,7 +13,4 @@ actions:
     link: /v3/
     type: primary
 
-
-copyright: false
-footer: 创腾
 ---

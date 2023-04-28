@@ -1,6 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { resolve } from 'path'
 
 export default defineUserConfig({
   base: "/",
@@ -8,13 +10,15 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "文档",
-      description: "文档",
+      description: "嘎嘎封装，嗷嗷开发。",
     },
   },
 
   theme,
   plugins: [
+    registerComponentsPlugin({
+      componentsDir: resolve(__dirname, './components')
+    }),
     searchProPlugin({
       // 索引全部内容
       indexContent: true,

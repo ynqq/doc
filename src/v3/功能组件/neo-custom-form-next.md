@@ -1,15 +1,34 @@
 ---
-title: 自定义拖拽表单
+title: 自定义表单
+author: 秦家慧
 ---
-# @neotrident/neo-custom-form-next
 
-## 安装
+## 组件说明
 
+可拖拽自定义表单
 
+## 安装方式
 
-## 使用
+```bash
+pnpm install @neotrident/neo-custom-form-next --save
+```
 
-1. 在main.ts里面引入
+or
+
+```bash
+npm install @neotrident/neo-custom-form-next --save
+```
+
+or
+
+```bash
+yarn add @neotrident/neo-custom-form-next
+```
+
+## 使用方法
+
+> 1.  在 main.ts 里面引入
+
 ```js
 import NeoCustomFormNext from '@neotrident/neo-custom-form-next';
 import '@neotrident/neo-custom-form-next/dist/style.css';
@@ -17,41 +36,202 @@ import '@neotrident/neo-custom-form-next/dist/style.css';
 app.use(NeoCustomFormNext)
 ```
 
-2. 类型支持
+> 2.  类型支持
+
 ```js
 export interface GlobalComponents {
     NeoCustomFormNext: typeof import('@neotrident/neo-custom-form-next/dist/packages/CustomForm/index.vue')['default'];
 }
 ```
 
-3. 使用案例
+> 3.  使用案例
+
 ```html
-<NeoCustomFormNext v-model:value="data" :header="getHeader" :upload-action="webConfig.api.sip + '/api/File/upload'">
-    <template #preset-fields>
+<NeoCustomFormNext
+  v-model:value="data"
+  :header="getHeader"
+  :upload-action="webConfig.api.sip + '/api/File/upload'"
+>
+  <template #preset-fields>
     <div></div>
-    </template>
+  </template>
 </NeoCustomFormNext>
 ```
 
-## 属性
+## 组件属性
 
-| 名称 | 类型 | 默认值 | 说明 |
-| :------ | :------ | :------ | :------ |
-| value | (ModalItemProps\|ContainersProps)[] | [] | 绑定数据 |
-| uploadAction | string | '' | 上传地址 |
-| height | string | 100% | 组件高度 |
-| mode | "design" \| "edit" \| "view" | "design" | 模式 <br> design: 可以拖动 <br> edit: 不能拖动但是可以对表单进行写入 <br> view: 只能看，不能拖动，不能写入|
-| lang | "zh-CN" | "en-US" | "zh-CN" | 语言类型 |
-| langPackage | {} | {} | 语言包<br>可以用来替换默认的语言包 |
-| header | ()=>AxiosHeader | ()=>{} | 上传文件时的header |
-| hasColon | boolean | false | 是否在表单label后面加入: <br>例如: 姓名: |
-| domain | string | '' | 文件预览时的域名 |
-| uploadInfo | UploadInfoProps |  | 文件上传信息 <br> statusKey: 上传接口返回的状态key名<br>successValue: 成功时的状态值 <br> uploadFileName: 上传文件的名称(不传默认为文件名称) |
+### value <Badge text="必填" />
 
-## 插槽
+::: info 自定义表单的数据
 
-| 名称 | 说明 |
-| :--- | :--- |
-| preset-fields | 表单标题 |
+- 类型: (ModalItemProps | ContainersProps) []
+
+```ts
+export interface ModalItemProps {
+  isTem?: boolean;
+  id: number;
+  type:
+    | "input"
+    | "textarea"
+    | "select"
+    | "multiple"
+    | "radio"
+    | "checkbox"
+    | "date"
+    | "inputNumber"
+    | "email"
+    | "link"
+    | "attachment"
+    | "container2"
+    | "container3";
+  title: string;
+  model?: string | string[] | number | number[] | undefined;
+  icon?: any;
+  placeholder?: string;
+  action?: string;
+  nameMapping?: string;
+  urlMapping?: string;
+  fileName?: string;
+  defaultList?: any[];
+  value?: ModalValueProps[];
+  format?: any;
+  formatOptions?: any[];
+  append?: string;
+  prepend?: string;
+  hasSuffix?: boolean;
+  suffixOptions?: boolean[];
+  columns?: ContainerColumnsProp;
+}
+
+export interface ContainerColumnsProp {
+  l: ModalItemProps[];
+  m?: ModalItemProps[];
+  r: ModalItemProps[];
+}
+
+export interface ContainersProps {
+  id: number;
+  type: string;
+  columns: ContainerColumnsProp;
+  title: string;
+}
+```
+
+:::
+
+### uploadAction
+
+::: info 上传地址
+
+- 类型: string
+  :::
+
+### height
+
+::: info 组件高度
+
+- 类型: string
+- 默认值：'100%'
+  :::
+
+### mode
+
+::: info 组件模式
+
+- 类型:
+  - design: 可以拖动
+  - edit: 不能拖动但是可以对表单进行写入
+  - view: 只能看，不能拖动，不能写入
+- 默认值: 'design'
+  :::
+
+### lang
+
+::: info 语言类型
+
+- 类型: "zh-CN" | "en-US"
+- 默认值: "zh-CN"
+  :::
+
+### langPackage
+
+::: info 语言包,可以用来替换默认的语言包
+
+- 类型: object
+- 默认值: {}
+  :::
+
+### header
+
+::: info 请求接口时的 header
+
+- 类型: () => AxiosHeader
+- 默认值: () => ({})
+  :::
+
+### uploadInfo
+
+::: info 文件上传信息
+
+- 类型: UploadInfoProps
+
+```ts
+export interface UploadInfoProps {
+  statusKey: string; // 上传接口返回的状态 key 名
+  successValue: number; // 成功时的状态值
+  uploadFileName: string; // 上传文件的名称(不传默认为文件名称)
+}
+```
+
+- 默认值:
+
+```js
+{
+    statusKey: "Status",
+    successValue: 1,
+    uploadFileName: "",
+}
+```
+
+:::
+
+### hasColon
+
+::: info 是否在表单 label 后面加入: 例如: 姓名:
+
+- 类型: boolean
+- 默认值: false
+  :::
+
+### domain
+
+::: info 文件预览时的域名
+
+- 类型: string
+- 默认值: ''
+  :::
+
+## 组件插槽
+
+### preset-fields
+
+::: info 表单标题
+:::
 
 ## 更新记录
+
+### v1.1.1
+
+1. 更新了 xxxxxxx
+2. 新增了 xxxxxxx
+3. 删除了 xxxxxxx
+
+<AuthorTime name="张三" time="2022-12-12"></AuthorTime>
+
+### 2022-12-12 12:22:22 @李四
+
+- 更新了 xxxxxxx
+
+### 2022-12-12 12:22:22 @xxx
+
+- 更新了 xxxxxxx

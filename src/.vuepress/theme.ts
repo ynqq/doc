@@ -38,8 +38,7 @@ export default hopeTheme({
 
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-        lastUpdated: 'true',
+        lastUpdated: '上次编辑于',
       },
     },
   },
