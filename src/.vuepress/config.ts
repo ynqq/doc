@@ -17,7 +17,7 @@ export default defineUserConfig({
   theme,
   plugins: [
     registerComponentsPlugin({
-      componentsDir: resolve(__dirname, './components')
+      componentsDir: resolve(__dirname, './components') // 自动注册vue组件
     }),
     searchProPlugin({
       // 索引全部内容

@@ -66,56 +66,56 @@ export interface GlobalComponents {
 
 - 类型: (ModalItemProps | ContainersProps) []
 
-```ts
-export interface ModalItemProps {
-  isTem?: boolean;
-  id: number;
-  type:
-    | "input"
-    | "textarea"
-    | "select"
-    | "multiple"
-    | "radio"
-    | "checkbox"
-    | "date"
-    | "inputNumber"
-    | "email"
-    | "link"
-    | "attachment"
-    | "container2"
-    | "container3";
-  title: string;
-  model?: string | string[] | number | number[] | undefined;
-  icon?: any;
-  placeholder?: string;
-  action?: string;
-  nameMapping?: string;
-  urlMapping?: string;
-  fileName?: string;
-  defaultList?: any[];
-  value?: ModalValueProps[];
-  format?: any;
-  formatOptions?: any[];
-  append?: string;
-  prepend?: string;
-  hasSuffix?: boolean;
-  suffixOptions?: boolean[];
-  columns?: ContainerColumnsProp;
-}
+  ```ts
+  export interface ModalItemProps {
+    isTem?: boolean;
+    id: number;
+    type:
+      | "input"
+      | "textarea"
+      | "select"
+      | "multiple"
+      | "radio"
+      | "checkbox"
+      | "date"
+      | "inputNumber"
+      | "email"
+      | "link"
+      | "attachment"
+      | "container2"
+      | "container3";
+    title: string;
+    model?: string | string[] | number | number[] | undefined;
+    icon?: any;
+    placeholder?: string;
+    action?: string;
+    nameMapping?: string;
+    urlMapping?: string;
+    fileName?: string;
+    defaultList?: any[];
+    value?: ModalValueProps[];
+    format?: any;
+    formatOptions?: any[];
+    append?: string;
+    prepend?: string;
+    hasSuffix?: boolean;
+    suffixOptions?: boolean[];
+    columns?: ContainerColumnsProp;
+  }
 
-export interface ContainerColumnsProp {
-  l: ModalItemProps[];
-  m?: ModalItemProps[];
-  r: ModalItemProps[];
-}
+  export interface ContainerColumnsProp {
+    l: ModalItemProps[];
+    m?: ModalItemProps[];
+    r: ModalItemProps[];
+  }
 
-export interface ContainersProps {
-  id: number;
-  type: string;
-  columns: ContainerColumnsProp;
-  title: string;
-}
-```
+  export interface ContainersProps {
+    id: number;
+    type: string;
+    columns: ContainerColumnsProp;
+    title: string;
+  }
+  ```
 
 :::
 
@@ -124,6 +124,7 @@ export interface ContainersProps {
 ::: info 上传地址
 
 - 类型: string
+- 默认值: ''
   :::
 
 ### height
@@ -175,23 +176,23 @@ export interface ContainersProps {
 
 - 类型: UploadInfoProps
 
-```ts
-export interface UploadInfoProps {
-  statusKey: string; // 上传接口返回的状态 key 名
-  successValue: number; // 成功时的状态值
-  uploadFileName: string; // 上传文件的名称(不传默认为文件名称)
-}
-```
+  ```ts
+  export interface UploadInfoProps {
+    statusKey: string; // 上传接口返回的状态 key 名
+    successValue: number; // 成功时的状态值
+    uploadFileName: string; // 上传文件的名称(不传默认为文件名称)
+  }
+  ```
 
 - 默认值:
 
-```js
-{
-    statusKey: "Status",
-    successValue: 1,
-    uploadFileName: "",
-}
-```
+  ```js
+  {
+      statusKey: "Status",
+      successValue: 1,
+      uploadFileName: "",
+  }
+  ```
 
 :::
 
@@ -211,12 +212,69 @@ export interface UploadInfoProps {
 - 默认值: ''
   :::
 
+## 组件事件
+
+### change
+
+::: info change 事件
+
+- 参数: Values
+
+  ```ts
+  interface Values {
+    data: string[];
+  }
+  ```
+
+:::
+
+## 组件方法
+
+### getData
+
+::: info 获取操作数据
+
+- 参数 1: string
+- 参数 2: Options
+
+  ```ts
+  interface Options {
+    data: string[];
+  }
+  ```
+
+- 返回值: Returns
+
+  ```ts
+  type Returns = Options[];
+  ```
+
+:::
+
 ## 组件插槽
 
 ### preset-fields
 
 ::: info 表单标题
 :::
+
+### slot1
+
+::: info 作用域插槽 1
+
+- 参数: Slots
+
+  ```ts
+  interface Slots {
+    data: Row;
+  }
+  ```
+
+:::
+
+## 源码地址
+
+<Source href="http://gitlab.ilabpower.devops/neotrident/fe-components-vue3/-/tree/qjh_dev" />
 
 ## 更新记录
 
@@ -227,11 +285,3 @@ export interface UploadInfoProps {
 3. 删除了 xxxxxxx
 
 <AuthorTime name="张三" time="2022-12-12"></AuthorTime>
-
-### 2022-12-12 12:22:22 @李四
-
-- 更新了 xxxxxxx
-
-### 2022-12-12 12:22:22 @xxx
-
-- 更新了 xxxxxxx

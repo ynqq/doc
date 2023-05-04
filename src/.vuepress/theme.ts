@@ -5,7 +5,7 @@ export default hopeTheme({
   hostname: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
 
   author: {
-    name: "创腾",
+    name: "Neo",
     url: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
   },
 
@@ -29,10 +29,11 @@ export default hopeTheme({
       // sidebar
       sidebar: {
         "/v2/": "structure",
-        "/v3/": "structure"
+        "/v3/": "structure",
+        "/utils/": "structure"
       },
 
-      footer: "哈哈哈哈哈哈",
+      footer: "",
 
       displayFooter: true,
 
@@ -45,8 +46,9 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      // 可以设置加密信息
+      // "/demo/encrypt.html": ["1234"],
+      // "/zh/demo/encrypt.html": ["1234"],
     },
   },
 
