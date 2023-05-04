@@ -154,7 +154,7 @@ app.use(xxx)
 
 - 返回值: 操作的数据
 
-  - 类型: Options
+  - 类型: Returns
 
     ```ts
     type Returns = Options[];
@@ -165,7 +165,7 @@ app.use(xxx)
 ### 组件插槽
 
 > 描述组件各个插槽的作用。  
-> 作用域插槽需要描述清楚<Text>每一个参数的作用(ts 需要写明类型)</Text>。  
+> 作用域插槽需要描述清楚<Text>插槽的参数(ts 需要写明类型)</Text>。  
 > 例如:
 
 #### slot1
@@ -185,6 +185,7 @@ app.use(xxx)
 ### 源码地址
 
 > 提供源码地址，方便其他人一起维护或者提问题。
+> 例如:  
 
 <Source href="http://www.baidu.com" />
 
