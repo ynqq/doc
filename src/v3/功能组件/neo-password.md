@@ -1,78 +1,143 @@
-# neo-password
+---
+title: 自定义密码输入框
+author: xxx
+---
 
-# About
-主要用在签名验证模块，解决了前端原生密码输入框不能阻止浏览器自动填充已完成密码这一痛点，基于公司目前使用的组件view-design(原iview)进行封装，
-能够支持原有组件（https://iviewui.com/components/input）的全部功能，包括表单验证，配置api及props可以自行参考。
+## 组件说明
 
+password
 
-# 说明
+## 安装方式
 
->  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
-
-
-# 项目运行
-
-
+```bash
+pnpm install neo-password --save
 ```
 
-npm install 或 yarn(推荐)
+or
 
-npm run serve 
-
-访问: http://localhost:800x
-
+```bash
+npm install neo-password --save
 ```
-#### 示例
 
-```javascript
-<template>
-  <div>
-    <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-      <FormItem label="Input" prop="input">
-        <neo-password v-model="formValidate.input" style="width: 200px" placeholder="Enter something..."></neo-password>
-      </FormItem>
-    </Form>
-    <Button @click="submit">提交</Button>
-  </div>
-</template>
+or
 
-<script>
-  import neoPassword from 'neo-password'
-  Vue.use(neoPassword)
-  export default {
-    name: "App",
-    data(){
-      return {
-        formValidate:{
-          input:""
-        },
-        ruleValidate: {
-          input: [
-            {required: true, message: 'The input cannot be empty', trigger: 'blur'}
-          ],
-        }
-      }
-    },
-    components: {
-    },
-    methods:{
-      submit(){
-        this.$refs['formValidate'].validate((valid) => {
-          if (valid) {
-            this.$Message.success('Success!');
-          } else {
-            this.$Message.error('Fail!');
-          }
-        })
-      }
-    }
+```bash
+yarn add neo-password
+```
+
+## 使用方法
+
+## 组件属性
+
+### uploadInfo <Badge text="必填" />
+
+::: info 文件上传信息
+
+- 类型: Props
+
+  ```ts
+  export interface Props {}
+  ```
+
+- 默认值:
+
+  ```js
+  {
   }
-</script>
+  ```
+
+:::
+
+## 组件事件
+
+### change
+
+::: info change 事件
+
+- 参数: Values
+
+```ts
+interface Values {
+  data: string[];
+}
 ```
 
-# Reversion
-1.0.0 初始版，发布密码输入框组件
-1.0.1 fix外部不能清空输入框bug
+:::
 
-# License
-MIT License
+## 组件方法
+
+### getData
+
+::: info 获取操作数据
+
+- 参数 1: string
+- 参数 2: Options
+
+  ```ts
+  interface Options {
+    data: string[];
+  }
+  ```
+
+- 返回值: Returns
+
+  ```ts
+  type Returns = Options[];
+  ```
+
+:::
+
+## 组件插槽
+
+### preset-fields
+
+::: info 表单标题
+:::
+
+### slot1
+
+::: info 作用域插槽 1
+
+- 参数: Slots
+
+  ```ts
+  interface Slots {
+    data: Row;
+  }
+  ```
+
+:::
+
+## 方法
+
+### subStr
+
+::: info 截取字符串并返回新的字符串
+
+- 参数 1: 要截取的字符串
+  - 必填: 是
+  - 类型: string
+- 参数 2: 开始下标
+  - 必填: 是
+  - 类型: number
+- 参数 3: 截取数量(不传则截取至结尾)
+  - 必填: 否
+  - 类型: number
+- 返回值: 新字符串
+  - 类型: string
+
+:::
+
+## 源码地址
+
+<Source href="xxx" />
+
+## 更新记录
+
+### v1.1.1
+
+1. 更新了 xxxxxxx
+2. 新增了 xxxxxxx
+3. 删除了 xxxxxxx
+
+<AuthorTime name="x" time="xxxx-xx-xx"></AuthorTime>

@@ -18,14 +18,14 @@ actions:
     type: primary
 ---
 
-## 组件/工具文档内容
+## 组件/工具文档内容 <Code-CopyBase/>
 
-### 组件/工具说明
+### 组件/工具说明 <Code-CopyIntroduce/>
 
 > 描述该组件/工具的功能。  
 > 例如: xxxx
 
-### 安装方式
+### 安装方式 <Code-CopyInstall/>
 
 > 写明组件/工具的安装方式，提供可以复制的代码块。  
 > 例如:
@@ -46,7 +46,7 @@ or
 yarn add xxx
 ```
 
-### 使用方法
+### 使用方法 <Code-CopyComUse/>
 
 > 描述该组件/工具如何使用。  
 > 例如:
@@ -58,7 +58,7 @@ import 'xxx/dist/style.css';
 app.use(xxx)
 ```
 
-### 组件属性
+### 组件属性 <Code-CopyComProps/>
 
 > 组件需要描述 <Text>props</Text> 的<Text>类型、是否必填和默认值</Text>；  
 > 例如:
@@ -87,7 +87,7 @@ app.use(xxx)
 
 :::
 
-### 组件事件
+### 组件事件 <Code-CopyComEvent/>
 
 > 描述组件 emit 的事件，需要写明<Text>每个事件的参数(ts 需要写明类型)</Text>。  
 > 例如:
@@ -108,7 +108,7 @@ app.use(xxx)
 
 :::
 
-### 组件方法
+### 组件方法 <Code-CopyComMethod/>
 
 > 描述通过 ref 可以调用的组件方法，需要写明<Text>每个方法的功能、参数(ts 需要写明类型)和返回值</Text>。  
 > 例如:
@@ -141,7 +141,7 @@ app.use(xxx)
 
   :::
 
-### 组件插槽
+### 组件插槽 <Code-CopyComSlot/>
 
 > 描述组件各个插槽的作用。  
 > 作用域插槽需要描述清楚<Text>插槽的参数(ts 需要写明类型)</Text>。  
@@ -161,7 +161,7 @@ app.use(xxx)
 
 :::
 
-### 工具方法
+### 工具方法 <Code-CopyUtilMethod/>
 
 > 工具类需要描述<Text>每个方法的功能、参数和返回值(ts 需要写明类型)</Text>。  
 > 例如:
@@ -184,14 +184,14 @@ app.use(xxx)
 
 :::
 
-### 源码地址
+### 源码地址 <Code-CopySource/>
 
 > 提供源码地址，方便其他人一起维护或者提问题。  
 > 例如:
 
 <Source href="http://www.baidu.com" />
 
-### 更新记录
+### 更新记录 <Code-CopyUpdateList/>
 
 > 描述每一次更新的时间、人员和更新内容。  
 > 例如:
