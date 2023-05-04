@@ -6,6 +6,7 @@ import { resolve } from 'path'
 
 export default defineUserConfig({
   base: "/",
+  title: 'NEO自定义组件',
 
   locales: {
     "/": {
