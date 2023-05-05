@@ -1,7 +1,7 @@
 <template>
     <div>
         <a :href="href" target="_">
-            <slot>source</slot>
+            <slot>source <i class="font-icon icon iconfont icon-link"></i> </slot>
         </a>
     </div>
 </template>

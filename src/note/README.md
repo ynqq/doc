@@ -60,7 +60,7 @@ app.use(xxx)
 
 ### 组件属性 <Code-CopyComProps/>
 
-> 组件需要描述 <Text>props</Text> 的<Text>类型、是否必填和默认值</Text>；  
+> 需要描述 <Text>props</Text>的 <Text>类型、是否必填和默认值</Text>；  
 > 例如:
 
 #### textConfig <Badge text="必填(可以使用该标签)" />

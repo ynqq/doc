@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .copyBtn {
+  user-select: none;
   margin-left: 10px;
   cursor: pointer;
   font-size: 14px;
