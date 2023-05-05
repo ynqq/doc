@@ -1,5 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import {  zhNavbar } from "./navbar/index.js";
+import { zhNavbar } from "./navbar/index.js";
 
 export default hopeTheme({
   hostname: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
@@ -8,7 +8,7 @@ export default hopeTheme({
     name: "Neo",
     url: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
   },
-
+hotReload: true,
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
@@ -16,9 +16,9 @@ export default hopeTheme({
   repo: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
 
   docsDir: "demo/theme-docs/src",
-
+  sidebarSorter: ['readme', "filename"],
+  
   locales: {
-
     /**
      * Chinese locale config
      */
@@ -30,7 +30,7 @@ export default hopeTheme({
       sidebar: {
         "/v2/": "structure",
         "/v3/": "structure",
-        "/utils/": "structure"
+        "/utils/": "structure",
       },
 
       footer: "",
@@ -39,7 +39,7 @@ export default hopeTheme({
 
       // page meta
       metaLocales: {
-        lastUpdated: '上次编辑于',
+        lastUpdated: "上次编辑于",
       },
     },
   },
@@ -154,3 +154,4 @@ export default hopeTheme({
     // },
   },
 });
+
