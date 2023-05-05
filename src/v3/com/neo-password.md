@@ -8,22 +8,28 @@ author: xxx
 password
 
 ## 安装方式
+## 安装方式
+::: tabs
+@tab pnpm
 
 ```bash
 pnpm install neo-password --save
 ```
 
-or
+@tab npm
 
 ```bash
 npm install neo-password --save
 ```
 
-or
+@tab yarn
 
 ```bash
 yarn add neo-password
 ```
+:::
+
+
 
 ## 使用方法
 

@@ -30,21 +30,25 @@ actions:
 > 写明组件/工具的安装方式，提供可以复制的代码块。  
 > 例如:
 
+::: tabs
+@tab pnpm
+
 ```bash
 pnpm install xxx --save
 ```
 
-or
+@tab npm
 
 ```bash
 npm install xxx --save
 ```
 
-or
+@tab yarn
 
 ```bash
 yarn add xxx
 ```
+:::
 
 ### 使用方法 <Code-CopyComUse/>
 

@@ -9,21 +9,25 @@ author: 秦家慧
 
 ## 安装方式
 
+::: tabs
+@tab pnpm
+
 ```bash
 pnpm install @neotrident/neo-custom-form-next --save
 ```
 
-or
+@tab npm
 
 ```bash
 npm install @neotrident/neo-custom-form-next --save
 ```
 
-or
+@tab yarn
 
 ```bash
 yarn add @neotrident/neo-custom-form-next
 ```
+:::
 
 ## 使用方法
 

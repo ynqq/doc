@@ -12,21 +12,25 @@
     data() {
       return {
         code: `## 安装方式
+::: tabs
+@tab pnpm
+
 \`\`\`bash
 pnpm install xxx --save
 \`\`\`
 
-or
+@tab npm
 
 \`\`\`bash
 npm install xxx --save
 \`\`\`
 
-or
+@tab yarn
 
 \`\`\`bash
 yarn add xxx
 \`\`\`
+:::
 `,
       };
     },

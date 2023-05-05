@@ -8,21 +8,26 @@ title: neo-utils
 
 ## 安装方式
 
-```bash
-pnpm install neo-utils --save
-```
-
-or
+::: tabs
+@tab pnpm
 
 ```bash
-npm install neo-utils --save
+pnpm install  neo-utils --save
 ```
 
-or
+@tab npm
 
 ```bash
-yarn add neo-utils
+npm install  neo-utils --save
 ```
+
+@tab yarn
+
+```bash
+yarn add  neo-utils
+```
+
+:::
 
 ## 使用方法
 
@@ -49,6 +54,59 @@ xxx('')
   - 类型: number
 - 返回值: 新字符串
   - 类型: string
+
+:::
+
+### subStr2
+
+::: details 截取字符串并返回新的字符串
+
+```ts
+/**
+ * @param str 要截取的字符串
+ * @param startIndex 开始下标
+ * @param subNum 截取数量(不传则截取至结尾)
+ * @returns 新的字符串
+ */
+function subStr(
+  str: string,
+  startIndex: number,
+  subNum?: number,
+  xxx?: Returns
+): string;
+
+interface Returns {
+  data: string[];
+}
+```
+
+:::
+
+### subStr3
+
+::: tabs
+@tab 功能
+截取字符串并返回新的字符串
+@tab 参数信息
+
+```ts
+/**
+ * @param str 要截取的字符串
+ * @param startIndex 开始下标
+ * @param subNum 截取数量(不传则截取至结尾)
+ * @returns 新的字符串
+ */
+function subStr(
+  str: string,
+  startIndex: number,
+  subNum?: number,
+  xxx?: Returns
+): string;
+
+interface Returns {
+  data: string[];
+}
+```
 
 :::
 
