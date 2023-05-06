@@ -15,22 +15,25 @@ export default {
 
 ### getData
 
-::: info 获取操作数据
+::: details 获取操作数据
 
-- 参数 1: string
-- 参数 2: Options
+\`\`\`ts
+/**
+ * @param str xxx
+ * @param options xxx
+ * @returns xxx
+ */
+function getData(
+  str: string,
+  options: Options,
+): Returns;
 
-  \`\`\`ts
-  interface Options {
-    data: string[];
-  }
-  \`\`\`
+interface Options {
+  data: string[];
+}
 
-- 返回值: Returns
-
-  \`\`\`ts
-  type Returns = Options[];
-  \`\`\`
+type Returns = Options[];
+\`\`\`
 
 :::
 `,
