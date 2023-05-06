@@ -119,31 +119,27 @@ app.use(xxx)
 
 #### getData
 
-::: info 获取操作数据
+::: details 获取操作数据
 
-- 参数 1: 名称
-  - 必填: 是
-  - 类型: string
-- 参数 2: 配置 xxx
+```ts
+/**
+ * @param str xxx
+ * @param options xxx
+ * @returns xxx
+ */
+function getData(
+  str: string,
+  options: Options,
+): Returns;
 
-  - 必填: 否
-  - 类型: Options
+interface Options {
+  data: string[];
+}
 
-    ```ts
-    interface Options {
-      data: string[];
-    }
-    ```
+type Returns = Options[];
+```
 
-- 返回值: 操作的数据
-
-  - 类型: Returns
-
-    ```ts
-    type Returns = Options[];
-    ```
-
-  :::
+:::
 
 ### 组件插槽 <Code-CopyComSlot/>
 
@@ -172,19 +168,26 @@ app.use(xxx)
 
 #### subStr
 
-::: info 截取字符串并返回新的字符串
+::: details 截取字符串并返回新的字符串
 
-- 参数 1: 要截取的字符串
-  - 必填: 是
-  - 类型: string
-- 参数 2: 开始下标
-  - 必填: 是
-  - 类型: number
-- 参数 3: 截取数量(不传则截取至结尾)
-  - 必填: 否
-  - 类型: number
-- 返回值: 新字符串
-  - 类型: string
+```ts
+/**
+ * @param str 要截取的字符串
+ * @param startIndex 开始下标
+ * @param subNum 截取数量(不传则截取至结尾)
+ * @returns 新的字符串
+ */
+function subStr(
+  str: string,
+  startIndex: number,
+  subNum?: number,
+  xxx?: Returns
+): string;
+
+interface Returns {
+  data: string[];
+}
+```
 
 :::
 
