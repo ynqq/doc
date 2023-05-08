@@ -18,7 +18,10 @@ actions:
     type: primary
 ---
 
-## 组件/工具文档内容 <Code-CopyBase/>
+## 组件/工具文档<Text>应包含以下内容</Text> <Code-CopyBase/>
+
+### Demo(开发中。。。)
+> 提供一个可以预览的demo，快速了解该组件的功能。
 
 ### 组件/工具说明 <Code-CopyIntroduce/>
 

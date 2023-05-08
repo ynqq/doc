@@ -1,5 +1,4 @@
 ---
-icon: home
 title: Cli
 heroText: Cli
 ---

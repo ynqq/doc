@@ -1,5 +1,4 @@
 ---
-icon: home
 title: Vue2组件
 heroImage: /logo.svg
 heroText: Vue2

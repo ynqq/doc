@@ -8,7 +8,7 @@ export default hopeTheme({
     name: "Neo",
     url: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
   },
-hotReload: true,
+  hotReload: true,
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
@@ -16,8 +16,8 @@ hotReload: true,
   repo: "http://gitlab.ilabpower.devops/qinjiahui/neo-doc",
 
   docsDir: "demo/theme-docs/src",
-  sidebarSorter: ['readme', "filename"],
-  
+  sidebarSorter: ["readme", "filename"],
+
   locales: {
     /**
      * Chinese locale config
@@ -154,4 +154,3 @@ hotReload: true,
     // },
   },
 });
-

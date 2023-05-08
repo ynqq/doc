@@ -3,6 +3,46 @@ title: 自定义表单
 author: 秦家慧
 ---
 
+<NeoReportBuilder />
+
+## Demo
+
+::: vue-playground 代码演示
+
+@file App.vue
+
+```vue
+<script setup>
+import { ref } from "vue";
+
+const msg = ref("怎么才能在组件中使用插件的形式来注册组件呢？");
+</script>
+
+<template>
+  <h3>{{ msg }}</h3>
+  <input v-model="msg" />
+  <NeoCustomFormNext />
+</template>
+```
+
+@import
+
+```json
+{
+  "imports": {}
+}
+```
+
+@setting
+
+```json
+{
+  "showCompileOutput": true
+}
+```
+
+:::
+
 ## 组件说明
 
 可拖拽自定义表单
@@ -245,10 +285,7 @@ export interface GlobalComponents {
  * @param options xxx
  * @returns xxx
  */
-function getData(
-  str: string,
-  options: Options,
-): Returns;
+function getData(str: string, options: Options): Returns;
 
 interface Options {
   data: string[];
