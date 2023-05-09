@@ -3,8 +3,6 @@ title: 自定义表单
 author: 秦家慧
 ---
 
-<NeoReportBuilder />
-
 ## Demo
 
 ::: vue-playground 代码演示
@@ -13,15 +11,23 @@ author: 秦家慧
 
 ```vue
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
+import { CustomForm } from "Com";
+import { initStyle } from "utils"
+initStyle('/components/v3/neo-custom-form-next/style.css')
 
-const msg = ref("怎么才能在组件中使用插件的形式来注册组件呢？");
+const list = ref([])
+const log = () => {
+  console.log(list.value)
+}
+
 </script>
 
 <template>
-  <h3>{{ msg }}</h3>
-  <input v-model="msg" />
-  <NeoCustomFormNext />
+  <div>
+  <button @click="log">获取数据</button>
+    <CustomForm v-model:value="list" />
+  </div>
 </template>
 ```
 
@@ -29,7 +35,10 @@ const msg = ref("怎么才能在组件中使用插件的形式来注册组件呢
 
 ```json
 {
-  "imports": {}
+  "imports": {
+    "Com": "/components/v3/neo-custom-form-next/index.es.js",
+    "utils": "/utils/index.js"
+  }
 }
 ```
 

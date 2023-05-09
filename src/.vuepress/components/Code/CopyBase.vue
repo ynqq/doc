@@ -4,7 +4,6 @@
 
 <script>
 import Copy from "./Copy.vue";
-
 export default {
   components: {
     Copy,
