@@ -61,8 +61,8 @@
 ## 关于代码演示
 
 - 系统提供了代码演示功能，但是每个文档都需要自己去写 vue/js 的演示代码。
-- <font color="red">需要将组件除 vue 外所有的依赖包打包进来(es 模式)，然后放入 public/component 文件夹下在演示代码中进行引用</font>
-- <font color="red">目前不支持 app.use()，只能使用 component 的格式。</font>
+- $\color{red}{需要将组件除 vue 外所有的依赖包打包进来(es 模式)，然后放入 public/component 文件夹下在演示代码中进行引用}$
+- $\color{red}{目前不支持 app.use()，只能使用 component 的格式。}$
 - 代码格式
 
 ````
@@ -75,7 +75,7 @@
 import { ref } from "vue";
 import { CustomForm } from "Com";
 import { initStyle } from "utils";
-initStyle("/components/component下文件夹名称/style.css");
+initStyle("/components/v3/neo-custom-form-next/style.css");
 
 const list = ref([]);
 const log = () => {
@@ -96,7 +96,7 @@ const log = () => {
 ```json
 {
   "imports": {
-    "Com": "/components/component下文件夹名称/index.es.js",
+    "Com": "/components/v3/neo-custom-form-next/index.es.js",
     "utils": "/utils/index.js"
   }
 }
