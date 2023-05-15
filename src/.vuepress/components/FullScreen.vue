@@ -36,6 +36,7 @@ export default {
 <style lang="scss" scoped>
 .fullScreenBtnBox {
   font-size: 14px;
+  line-height: 28px;
   float: right;
   cursor: pointer;
   color: #2980b9;

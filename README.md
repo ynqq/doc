@@ -60,7 +60,9 @@
 
 ## 关于代码演示
 
-- 系统提供了代码演示功能，但是每个文档都需要自己去写 vue/js 代码。
+- 系统提供了代码演示功能，但是每个文档都需要自己去写 vue/js 的演示代码。
+- <font color="red">需要将组件除 vue 外所有的依赖包需要打包进来(es 模式)，然后放入 public/component 文件夹下。</font>
+- <font color="red">目前不支持 app.use()只能使用 component 的格式。</font>
 - 代码格式
 
 ````

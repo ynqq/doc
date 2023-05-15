@@ -20,8 +20,53 @@ actions:
 
 ## 组件/工具文档<Text>应包含以下内容</Text> <Code-CopyBase/>
 
-### Demo(开发中。。。)
-> 提供一个可以预览的demo，快速了解该组件的功能。
+### Demo <Code-CopyDemo/> <FullScreen/>
+> 提供一个可以预览的demo，快速了解该组件的功能。  
+> 例如: 
+
+::: vue-playground 代码演示 
+
+@file App.vue
+
+```vue
+<script setup>
+import { ref } from "vue";
+import { CustomForm } from "Com";
+import { initStyle } from "utils";
+initStyle("/components/v3/neo-custom-form-next/style.css");
+
+const list = ref([]);
+const log = () => {
+  console.log(list.value);
+};
+</script>
+
+<template>
+  <div>
+    <button @click="log">获取数据</button>
+    <CustomForm v-model:value="list" />
+  </div>
+</template>
+```
+
+@import
+
+```json
+{
+  "imports": {
+    "Com": "/components/v3/neo-custom-form-next/index.es.js",
+    "utils": "/utils/index.js"
+  }
+}
+```
+
+@setting
+
+```json
+{}
+```
+
+:::
 
 ### 组件/工具说明 <Code-CopyIntroduce/>
 
