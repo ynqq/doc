@@ -61,8 +61,8 @@
 ## 关于代码演示
 
 - 系统提供了代码演示功能，但是每个文档都需要自己去写 vue/js 的演示代码。
-- $\color{red}{需要将组件除 vue 外所有的依赖包打包进来(es 模式)，然后放入 public/component 文件夹下在演示代码中进行引用}$
-- $\color{red}{目前不支持 app.use()，只能使用 component 的格式。}$
+- <font color="red">需要将组件除 vue 外所有的依赖包打包进来(es 模式)，然后放入 public/component 文件夹下在演示代码中进行引用</font>
+- <font color="red">目前不支持 app.use()，只能使用 component 的格式。</font>
 - 代码格式
 
 ````
