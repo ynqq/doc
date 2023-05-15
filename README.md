@@ -52,7 +52,7 @@
   {
     "text": "navbar名称",
     "icon": "图标",
-    "link": "/v3/(src/文件地址后面不写具体md就会使用README.md文件当做首页)"
+    "link": "/v3/(src/文件地址，后面不写具体md就会使用README.md文件当做首页)"
   }
   ```
 - 菜单配置(已配置根据目录结构自动生成菜单，<font color="red">写单个文档时不需要配置</font>。)
@@ -61,12 +61,12 @@
 ## 关于代码演示
 
 - 系统提供了代码演示功能，但是每个文档都需要自己去写 vue/js 的演示代码。
-- <font color="red">需要将组件除 vue 外所有的依赖包需要打包进来(es 模式)，然后放入 public/component 文件夹下。</font>
-- <font color="red">目前不支持 app.use()只能使用 component 的格式。</font>
+- <font color="red">需要将组件除 vue 外所有的依赖包打包进来(es 模式)，然后放入 public/component 文件夹下在演示代码中进行引用</font>
+- <font color="red">目前不支持 app.use()，只能使用 component 的格式。</font>
 - 代码格式
 
 ````
-::: vue-playground 代码演示
+::: vue-playground 代码演示标题xxx
 
 @file App.vue
 
@@ -75,7 +75,7 @@
 import { ref } from "vue";
 import { CustomForm } from "Com";
 import { initStyle } from "utils";
-initStyle("/components/v3/neo-custom-form-next/style.css");
+initStyle("/components/component下文件夹名称/style.css");
 
 const list = ref([]);
 const log = () => {
@@ -96,7 +96,7 @@ const log = () => {
 ```json
 {
   "imports": {
-    "Com": "/components/v3/neo-custom-form-next/index.es.js",
+    "Com": "/components/component下文件夹名称/index.es.js",
     "utils": "/utils/index.js"
   }
 }
