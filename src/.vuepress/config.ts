@@ -5,7 +5,7 @@ import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { resolve } from 'path'
 
 export default defineUserConfig({
-  base: "/",
+  base: "/docs/",
   title: 'NEO自定义组件',
 
   locales: {
