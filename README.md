@@ -15,6 +15,9 @@
 │   │   ├── components → 该文件夹下的组件会被自动注册，使用方式(<文件名 />, <文件夹名-文件名 />)
 │   │   ├── navbar → 顶部导航栏配置文件
 │   │   ├── public → 静态资源目录
+│   │   │   ├── components → 用于存放vue3/vue2的npm组件，需要是es模式并且除vue外所有的依赖包需要打包进来。
+│   │   │   ├──            → 目前不支持app.use()只能使用component的格式。
+│   │   │   ├── utils → 工具脚本，可以在md文件中使用importmap引入
 │   │   ├── styles → 用于存放样式相关的文件
 │   │   ├── config.ts → 配置文件的入口文件
 │   │   ├── client.ts → 客户端文件
@@ -54,6 +57,57 @@
   ```
 - 菜单配置(已配置根据目录结构自动生成菜单，<font color="red">写单个文档时不需要配置</font>。)
   > vuepress-theme-hope 在 sidebar 中配置"structure"会根据目录结构自动生成菜单，该 navbar 下的 md 文件如果有文件夹会生成多层级的菜单，如果在最外层则生成一级菜单。
+
+## 关于代码演示
+
+- 系统提供了代码演示功能，但是每个文档都需要自己去写 vue/js 代码。
+- 代码格式
+
+````
+::: vue-playground 代码演示
+
+@file App.vue
+
+```vue
+<script setup>
+import { ref } from "vue";
+import { CustomForm } from "Com";
+import { initStyle } from "utils";
+initStyle("/components/v3/neo-custom-form-next/style.css");
+
+const list = ref([]);
+const log = () => {
+  console.log(list.value);
+};
+</script>
+
+<template>
+  <div>
+    <button @click="log">获取数据</button>
+    <CustomForm v-model:value="list" />
+  </div>
+</template>
+```
+
+@import
+
+```json
+{
+  "imports": {
+    "Com": "/components/v3/neo-custom-form-next/index.es.js",
+    "utils": "/utils/index.js"
+  }
+}
+```
+
+@setting
+
+```json
+{}
+```
+
+:::
+````
 
 ## 相关链接
 

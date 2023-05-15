@@ -3,29 +3,28 @@ title: 自定义表单
 author: 秦家慧
 ---
 
-## Demo
+## Demo <FullScreen/>
 
-::: vue-playground 代码演示
+::: vue-playground 代码演示 
 
 @file App.vue
 
 ```vue
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 import { CustomForm } from "Com";
-import { initStyle } from "utils"
-initStyle('/components/v3/neo-custom-form-next/style.css')
+import { initStyle } from "utils";
+initStyle("/components/v3/neo-custom-form-next/style.css");
 
-const list = ref([])
+const list = ref([]);
 const log = () => {
-  console.log(list.value)
-}
-
+  console.log(list.value);
+};
 </script>
 
 <template>
   <div>
-  <button @click="log">获取数据</button>
+    <button @click="log">获取数据</button>
     <CustomForm v-model:value="list" />
   </div>
 </template>
@@ -45,9 +44,7 @@ const log = () => {
 @setting
 
 ```json
-{
-  "showCompileOutput": true
-}
+{}
 ```
 
 :::
