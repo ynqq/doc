@@ -33,8 +33,8 @@ const log = () => {
 ```json
 {
   "imports": {
-    "Com": "/components/v3/neo-custom-form-next/index.es.js",
-    "utils": "/utils/index.js"
+    "Com": "./components/v3/neo-custom-form-next/index.es.js",
+    "utils": "./utils/index.js"
   }
 }
 ```
