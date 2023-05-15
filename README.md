@@ -46,7 +46,7 @@
   ---
   ```
 - navbar 配置(已配置完成，<font color="red">写单个文档时不需要配置</font>。)
-  > 配置地址: src\.vuepress\navbar
+  > 配置地址: src\\.vuepress\navbar
   > 图标可以参考<a href="https://theme-hope.vuejs.press/zh/guide/interface/icon.html#%E6%B5%8F%E8%A7%88%E5%9B%BE%E6%A0%87" target="_">内置 iconfont 图标</a>
   ```json
   {
