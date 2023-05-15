@@ -1,16 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@neotrident/neo-custom-form-next': ^1.1.0
   '@vuepress/client': 2.0.0-beta.61
   '@vuepress/plugin-register-components': 2.0.0-beta.61
   vue: ^3.2.47
   vuepress: 2.0.0-beta.61
   vuepress-plugin-search-pro: 2.0.0-beta.206
   vuepress-theme-hope: 2.0.0-beta.206
-
-dependencies:
-  '@neotrident/neo-custom-form-next': 1.1.0
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.61
@@ -1476,19 +1472,6 @@ packages:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
-
-  /@neotrident/neo-custom-form-next/1.1.0:
-    resolution: {integrity: sha1-dFVSQzNk/7kAKi8FtOR78PxNazA=, tarball: '@neotrident/neo-custom-form-next/-/@neotrident/neo-custom-form-next-1.1.0.tgz'}
-    dependencies:
-      '@ant-design/icons-vue': registry.npmjs.org/@ant-design/icons-vue/6.1.0_vue@3.2.47
-      ant-design-vue: registry.npmjs.org/ant-design-vue/2.2.8_vue@3.2.47
-      intersection-observer: registry.npmjs.org/intersection-observer/0.12.2
-      vue: registry.npmjs.org/vue/3.2.47
-      vue-i18n: registry.npmjs.org/vue-i18n/9.1.7_vue@3.2.47
-      vuedraggable: registry.npmjs.org/vuedraggable/4.1.0_vue@3.2.47
-    transitivePeerDependencies:
-      - '@vue/compiler-sfc'
-    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -5935,54 +5918,19 @@ packages:
       tslib: registry.npmjs.org/tslib/2.3.0
     dev: true
 
-  registry.npmjs.org/@ant-design/colors/6.0.0:
-    resolution: {integrity: sha512-qAZRvPzfdWHtfameEGP2Qvuf838NhergR35o+EuVyB5XvSA98xod5r4utvi4TJ3ywmevm290g9nsCG5MryrdWQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@ant-design/colors/-/colors-6.0.0.tgz}
-    name: '@ant-design/colors'
-    version: 6.0.0
-    dependencies:
-      '@ctrl/tinycolor': registry.npmjs.org/@ctrl/tinycolor/3.6.0
-    dev: false
-
-  registry.npmjs.org/@ant-design/icons-svg/4.2.1:
-    resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@ant-design/icons-svg/-/icons-svg-4.2.1.tgz}
-    name: '@ant-design/icons-svg'
-    version: 4.2.1
-    dev: false
-
-  registry.npmjs.org/@ant-design/icons-vue/6.1.0_vue@3.2.47:
-    resolution: {integrity: sha512-EX6bYm56V+ZrKN7+3MT/ubDkvJ5rK/O2t380WFRflDcVFgsvl3NLH7Wxeau6R8DbrO5jWR6DSTC3B6gYFp77AA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@ant-design/icons-vue/-/icons-vue-6.1.0.tgz}
-    id: registry.npmjs.org/@ant-design/icons-vue/6.1.0
-    name: '@ant-design/icons-vue'
-    version: 6.1.0
-    peerDependencies:
-      vue: '>=3.0.3'
-    dependencies:
-      '@ant-design/colors': registry.npmjs.org/@ant-design/colors/6.0.0
-      '@ant-design/icons-svg': registry.npmjs.org/@ant-design/icons-svg/4.2.1
-      vue: registry.npmjs.org/vue/3.2.47
-    dev: false
-
   registry.npmjs.org/@babel/helper-string-parser/7.19.4:
     resolution: {integrity: sha512-nHtDoQcuqFmwYNYPz3Rah5ph2p8PFeFCsZk9A/48dPc/rGocJ5J3hAAZ7pb76VWX3fZKu+uEr/FhH5jLx7umrw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.19.4.tgz}
     name: '@babel/helper-string-parser'
     version: 7.19.4
     engines: {node: '>=6.9.0'}
+    dev: true
 
   registry.npmjs.org/@babel/helper-validator-identifier/7.19.1:
     resolution: {integrity: sha512-awrNfaMtnHUr653GgGEs++LlAvW6w+DcPrOliSMXWCKo597CwL5Acf/wWdNkf/tfEQE3mjkeD1YOVZOUV/od1w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.19.1.tgz}
     name: '@babel/helper-validator-identifier'
     version: 7.19.1
     engines: {node: '>=6.9.0'}
-
-  registry.npmjs.org/@babel/parser/7.21.4:
-    resolution: {integrity: sha512-alVJj7k7zIxqBZ7BTRhz0IqJFxW1VJbm6N8JbcYhQ186df9ZBPbZBmWSqAMXwHGsCJdYks7z/voa3ibiS5bCIw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@babel/parser/-/parser-7.21.4.tgz}
-    name: '@babel/parser'
-    version: 7.21.4
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-    dependencies:
-      '@babel/types': registry.npmjs.org/@babel/types/7.21.4
-    dev: false
+    dev: true
 
   registry.npmjs.org/@babel/runtime/7.21.0:
     resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@babel/runtime/-/runtime-7.21.0.tgz}
@@ -5991,6 +5939,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.11
+    dev: true
 
   registry.npmjs.org/@babel/types/7.21.4:
     resolution: {integrity: sha512-rU2oY501qDxE8Pyo7i/Orqma4ziCOrby0/9mvbDUGEfvZjb279Nk9k19e2fiCxHbRRpY2ZyrgW1eq22mvmOIzA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@babel/types/-/types-7.21.4.tgz}
@@ -6001,13 +5950,7 @@ packages:
       '@babel/helper-string-parser': registry.npmjs.org/@babel/helper-string-parser/7.19.4
       '@babel/helper-validator-identifier': registry.npmjs.org/@babel/helper-validator-identifier/7.19.1
       to-fast-properties: registry.npmjs.org/to-fast-properties/2.0.0
-
-  registry.npmjs.org/@ctrl/tinycolor/3.6.0:
-    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.6.0.tgz}
-    name: '@ctrl/tinycolor'
-    version: 3.6.0
-    engines: {node: '>=10'}
-    dev: false
+    dev: true
 
   registry.npmjs.org/@esbuild/android-arm/0.16.17:
     resolution: {integrity: sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.16.17.tgz}
@@ -6251,254 +6194,6 @@ packages:
     dev: true
     optional: true
 
-  registry.npmjs.org/@intlify/core-base/9.1.7:
-    resolution: {integrity: sha512-q1W2j81xbHyfKrNcca/CeJyf0Bcx4u9UDu05l7AaiJbqOseTme2o2I3wp1hDDCtmC7k7HgX0sAygyHNJH9swuQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/core-base/-/core-base-9.1.7.tgz}
-    name: '@intlify/core-base'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dependencies:
-      '@intlify/devtools-if': registry.npmjs.org/@intlify/devtools-if/9.1.7
-      '@intlify/message-compiler': registry.npmjs.org/@intlify/message-compiler/9.1.7
-      '@intlify/message-resolver': registry.npmjs.org/@intlify/message-resolver/9.1.7
-      '@intlify/runtime': registry.npmjs.org/@intlify/runtime/9.1.7
-      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.1.7
-      '@intlify/vue-devtools': registry.npmjs.org/@intlify/vue-devtools/9.1.7
-    dev: false
-
-  registry.npmjs.org/@intlify/devtools-if/9.1.7:
-    resolution: {integrity: sha512-/DcN5FUySSkQhDqx5y1RvxfuCXO3Ot/dUEIOs472qbM7Hyb2qif+eXCnwHBzlI4+wEfQVT6L0PiM1a7Er/ro9g==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/devtools-if/-/devtools-if-9.1.7.tgz}
-    name: '@intlify/devtools-if'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dependencies:
-      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.1.7
-    dev: false
-
-  registry.npmjs.org/@intlify/message-compiler/9.1.7:
-    resolution: {integrity: sha512-JZNkAhr3O7tnbdbRBcpYfqr/Ai26WTzX0K/lV8Y1KVdOIj/dGiamaffdWUdFiDXUnbJRNbPiOaKxy7Pwip3KxQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/message-compiler/-/message-compiler-9.1.7.tgz}
-    name: '@intlify/message-compiler'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dependencies:
-      '@intlify/message-resolver': registry.npmjs.org/@intlify/message-resolver/9.1.7
-      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.1.7
-      source-map: registry.npmjs.org/source-map/0.6.1
-    dev: false
-
-  registry.npmjs.org/@intlify/message-resolver/9.1.7:
-    resolution: {integrity: sha512-WTK+OaXJYjyquLGhuCyDvU2WHkG+kXzXeHagmVFHn+s118Jf2143zzkLLUrapP5CtZ/csuyjmYg7b3xQRQAmvw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/message-resolver/-/message-resolver-9.1.7.tgz}
-    name: '@intlify/message-resolver'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dev: false
-
-  registry.npmjs.org/@intlify/runtime/9.1.7:
-    resolution: {integrity: sha512-QURPSlzhOVnRwS2XMGpCDsDkP42kfVBh94aAORxh/gVGzdgJip2vagrIFij/J69aEqdB476WJkMhVjP8VSHmiA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/runtime/-/runtime-9.1.7.tgz}
-    name: '@intlify/runtime'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dependencies:
-      '@intlify/message-compiler': registry.npmjs.org/@intlify/message-compiler/9.1.7
-      '@intlify/message-resolver': registry.npmjs.org/@intlify/message-resolver/9.1.7
-      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.1.7
-    dev: false
-
-  registry.npmjs.org/@intlify/shared/9.1.7:
-    resolution: {integrity: sha512-zt0zlUdalumvT9AjQNxPXA36UgOndUyvBMplh8uRZU0fhWHAwhnJTcf0NaG9Qvr8I1n3HPSs96+kLb/YdwTavQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/shared/-/shared-9.1.7.tgz}
-    name: '@intlify/shared'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dev: false
-
-  registry.npmjs.org/@intlify/vue-devtools/9.1.7:
-    resolution: {integrity: sha512-DI5Wc0aOiohtBUGUkKAcryCWbbuaO4/PK4Pa/LaNCsFNxbtgR5qkIDmhBv9xVPYGTUhySXxaDDAMvOpBjhPJjw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@intlify/vue-devtools/-/vue-devtools-9.1.7.tgz}
-    name: '@intlify/vue-devtools'
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    dependencies:
-      '@intlify/message-resolver': registry.npmjs.org/@intlify/message-resolver/9.1.7
-      '@intlify/runtime': registry.npmjs.org/@intlify/runtime/9.1.7
-      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.1.7
-    dev: false
-
-  registry.npmjs.org/@simonwep/pickr/1.8.2:
-    resolution: {integrity: sha512-/l5w8BIkrpP6n1xsetx9MWPWlU6OblN5YgZZphxan0Tq4BByTCETL6lyIeY8lagalS2Nbt4F2W034KHLIiunKA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@simonwep/pickr/-/pickr-1.8.2.tgz}
-    name: '@simonwep/pickr'
-    version: 1.8.2
-    dependencies:
-      core-js: registry.npmjs.org/core-js/3.30.1
-      nanopop: registry.npmjs.org/nanopop/2.3.0
-    dev: false
-
-  registry.npmjs.org/@vue/compiler-core/3.2.47:
-    resolution: {integrity: sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.2.47.tgz}
-    name: '@vue/compiler-core'
-    version: 3.2.47
-    dependencies:
-      '@babel/parser': registry.npmjs.org/@babel/parser/7.21.4
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-      estree-walker: registry.npmjs.org/estree-walker/2.0.2
-      source-map: registry.npmjs.org/source-map/0.6.1
-    dev: false
-
-  registry.npmjs.org/@vue/compiler-dom/3.2.47:
-    resolution: {integrity: sha512-dBBnEHEPoftUiS03a4ggEig74J2YBZ2UIeyfpcRM2tavgMWo4bsEfgCGsu+uJIL/vax9S+JztH8NmQerUo7shQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.2.47.tgz}
-    name: '@vue/compiler-dom'
-    version: 3.2.47
-    dependencies:
-      '@vue/compiler-core': registry.npmjs.org/@vue/compiler-core/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-    dev: false
-
-  registry.npmjs.org/@vue/compiler-sfc/3.2.47:
-    resolution: {integrity: sha512-rog05W+2IFfxjMcFw10tM9+f7i/+FFpZJJ5XHX72NP9eC2uRD+42M3pYcQqDXVYoj74kHMSEdQ/WmCjt8JFksQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.2.47.tgz}
-    name: '@vue/compiler-sfc'
-    version: 3.2.47
-    dependencies:
-      '@babel/parser': registry.npmjs.org/@babel/parser/7.21.4
-      '@vue/compiler-core': registry.npmjs.org/@vue/compiler-core/3.2.47
-      '@vue/compiler-dom': registry.npmjs.org/@vue/compiler-dom/3.2.47
-      '@vue/compiler-ssr': registry.npmjs.org/@vue/compiler-ssr/3.2.47
-      '@vue/reactivity-transform': registry.npmjs.org/@vue/reactivity-transform/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-      estree-walker: registry.npmjs.org/estree-walker/2.0.2
-      magic-string: registry.npmjs.org/magic-string/0.25.9
-      postcss: registry.npmjs.org/postcss/8.4.23
-      source-map: registry.npmjs.org/source-map/0.6.1
-    dev: false
-
-  registry.npmjs.org/@vue/compiler-ssr/3.2.47:
-    resolution: {integrity: sha512-wVXC+gszhulcMD8wpxMsqSOpvDZ6xKXSVWkf50Guf/S+28hTAXPDYRTbLQ3EDkOP5Xz/+SY37YiwDquKbJOgZw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/compiler-ssr/-/compiler-ssr-3.2.47.tgz}
-    name: '@vue/compiler-ssr'
-    version: 3.2.47
-    dependencies:
-      '@vue/compiler-dom': registry.npmjs.org/@vue/compiler-dom/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-    dev: false
-
-  registry.npmjs.org/@vue/devtools-api/6.5.0:
-    resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.5.0.tgz}
-    name: '@vue/devtools-api'
-    version: 6.5.0
-    dev: false
-
-  registry.npmjs.org/@vue/reactivity-transform/3.2.47:
-    resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/reactivity-transform/-/reactivity-transform-3.2.47.tgz}
-    name: '@vue/reactivity-transform'
-    version: 3.2.47
-    dependencies:
-      '@babel/parser': registry.npmjs.org/@babel/parser/7.21.4
-      '@vue/compiler-core': registry.npmjs.org/@vue/compiler-core/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-      estree-walker: registry.npmjs.org/estree-walker/2.0.2
-      magic-string: registry.npmjs.org/magic-string/0.25.9
-    dev: false
-
-  registry.npmjs.org/@vue/reactivity/3.2.47:
-    resolution: {integrity: sha512-7khqQ/75oyyg+N/e+iwV6lpy1f5wq759NdlS1fpAhFXa8VeAIKGgk2E/C4VF59lx5b+Ezs5fpp/5WsRYXQiKxQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.2.47.tgz}
-    name: '@vue/reactivity'
-    version: 3.2.47
-    dependencies:
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-    dev: false
-
-  registry.npmjs.org/@vue/runtime-core/3.2.47:
-    resolution: {integrity: sha512-RZxbLQIRB/K0ev0K9FXhNbBzT32H9iRtYbaXb0ZIz2usLms/D55dJR2t6cIEUn6vyhS3ALNvNthI+Q95C+NOpA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.2.47.tgz}
-    name: '@vue/runtime-core'
-    version: 3.2.47
-    dependencies:
-      '@vue/reactivity': registry.npmjs.org/@vue/reactivity/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-    dev: false
-
-  registry.npmjs.org/@vue/runtime-dom/3.2.47:
-    resolution: {integrity: sha512-ArXrFTjS6TsDei4qwNvgrdmHtD930KgSKGhS5M+j8QxXrDJYLqYw4RRcDy1bz1m1wMmb6j+zGLifdVHtkXA7gA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.2.47.tgz}
-    name: '@vue/runtime-dom'
-    version: 3.2.47
-    dependencies:
-      '@vue/runtime-core': registry.npmjs.org/@vue/runtime-core/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-      csstype: registry.npmjs.org/csstype/2.6.21
-    dev: false
-
-  registry.npmjs.org/@vue/server-renderer/3.2.47_vue@3.2.47:
-    resolution: {integrity: sha512-dN9gc1i8EvmP9RCzvneONXsKfBRgqFeFZLurmHOveL7oH6HiFXJw5OGu294n1nHc/HMgTy6LulU/tv5/A7f/LA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.2.47.tgz}
-    id: registry.npmjs.org/@vue/server-renderer/3.2.47
-    name: '@vue/server-renderer'
-    version: 3.2.47
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@vue/compiler-ssr': registry.npmjs.org/@vue/compiler-ssr/3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-      vue: registry.npmjs.org/vue/3.2.47
-    dev: false
-
-  registry.npmjs.org/@vue/shared/3.2.47:
-    resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/@vue/shared/-/shared-3.2.47.tgz}
-    name: '@vue/shared'
-    version: 3.2.47
-    dev: false
-
-  registry.npmjs.org/ant-design-vue/2.2.8_vue@3.2.47:
-    resolution: {integrity: sha512-3graq9/gCfJQs6hznrHV6sa9oDmk/D1H3Oo0vLdVpPS/I61fZPk8NEyNKCHpNA6fT2cx6xx9U3QS63uuyikg/Q==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/ant-design-vue/-/ant-design-vue-2.2.8.tgz}
-    id: registry.npmjs.org/ant-design-vue/2.2.8
-    name: ant-design-vue
-    version: 2.2.8
-    peerDependencies:
-      '@vue/compiler-sfc': '>=3.1.0'
-      vue: '>=3.1.0'
-    dependencies:
-      '@ant-design/icons-vue': registry.npmjs.org/@ant-design/icons-vue/6.1.0_vue@3.2.47
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.21.0
-      '@simonwep/pickr': registry.npmjs.org/@simonwep/pickr/1.8.2
-      array-tree-filter: registry.npmjs.org/array-tree-filter/2.1.0
-      async-validator: registry.npmjs.org/async-validator/3.5.2
-      dom-align: registry.npmjs.org/dom-align/1.12.4
-      dom-scroll-into-view: registry.npmjs.org/dom-scroll-into-view/2.0.1
-      lodash: registry.npmjs.org/lodash/4.17.21
-      lodash-es: registry.npmjs.org/lodash-es/4.17.21
-      moment: registry.npmjs.org/moment/2.29.4
-      omit.js: registry.npmjs.org/omit.js/2.0.2
-      resize-observer-polyfill: registry.npmjs.org/resize-observer-polyfill/1.5.1
-      scroll-into-view-if-needed: registry.npmjs.org/scroll-into-view-if-needed/2.2.31
-      shallow-equal: registry.npmjs.org/shallow-equal/1.2.1
-      vue: registry.npmjs.org/vue/3.2.47
-      vue-types: registry.npmjs.org/vue-types/3.0.2_vue@3.2.47
-      warning: registry.npmjs.org/warning/4.0.3
-    dev: false
-
-  registry.npmjs.org/array-tree-filter/2.1.0:
-    resolution: {integrity: sha512-4ROwICNlNw/Hqa9v+rk5h22KjmzB1JGTMVKP2AKJBOCgb0yL0ASf0+YvCcLNNwquOHNX48jkeZIJ3a+oOQqKcw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/array-tree-filter/-/array-tree-filter-2.1.0.tgz}
-    name: array-tree-filter
-    version: 2.1.0
-    dev: false
-
-  registry.npmjs.org/async-validator/3.5.2:
-    resolution: {integrity: sha512-8eLCg00W9pIRZSB781UUX/H6Oskmm8xloZfr09lz5bikRpBVDlJ3hRVuxxP1SxcwsEYfJ4IU8Q19Y8/893r3rQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/async-validator/-/async-validator-3.5.2.tgz}
-    name: async-validator
-    version: 3.5.2
-    dev: false
-
-  registry.npmjs.org/compute-scroll-into-view/1.0.20:
-    resolution: {integrity: sha512-UCB0ioiyj8CRjtrvaceBLqqhZCVP+1B8+NWQhmdsm0VXOJtobBCf1dBQmebCCo34qZmUwZfIH2MZLqNHazrfjg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/compute-scroll-into-view/-/compute-scroll-into-view-1.0.20.tgz}
-    name: compute-scroll-into-view
-    version: 1.0.20
-    dev: false
-
-  registry.npmjs.org/core-js/3.30.1:
-    resolution: {integrity: sha512-ZNS5nbiSwDTq4hFosEDqm65izl2CWmLz0hARJMyNQBgkUZMIF51cQiMvIQKA6hvuaeWxQDP3hEedM1JZIgTldQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/core-js/-/core-js-3.30.1.tgz}
-    name: core-js
-    version: 3.30.1
-    requiresBuild: true
-    dev: false
-
-  registry.npmjs.org/csstype/2.6.21:
-    resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/csstype/-/csstype-2.6.21.tgz}
-    name: csstype
-    version: 2.6.21
-    dev: false
-
   registry.npmjs.org/csstype/3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz}
     name: csstype
@@ -6519,29 +6214,11 @@ packages:
       ms: registry.npmjs.org/ms/2.1.2
     dev: true
 
-  registry.npmjs.org/dom-align/1.12.4:
-    resolution: {integrity: sha512-R8LUSEay/68zE5c8/3BDxiTEvgb4xZTF0RKmAHfiEVN3klfIpXfi2/QCoiWPccVQ0J/ZGdz9OjzL4uJEP/MRAw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/dom-align/-/dom-align-1.12.4.tgz}
-    name: dom-align
-    version: 1.12.4
-    dev: false
-
-  registry.npmjs.org/dom-scroll-into-view/2.0.1:
-    resolution: {integrity: sha512-bvVTQe1lfaUr1oFzZX80ce9KLDlZ3iU+XGNE/bz9HnGdklTieqsbmsLHe+rT2XWqopvL0PckkYqN7ksmm5pe3w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/dom-scroll-into-view/-/dom-scroll-into-view-2.0.1.tgz}
-    name: dom-scroll-into-view
-    version: 2.0.1
-    dev: false
-
   registry.npmjs.org/estree-walker/1.0.1:
     resolution: {integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/estree-walker/-/estree-walker-1.0.1.tgz}
     name: estree-walker
     version: 1.0.1
     dev: true
-
-  registry.npmjs.org/estree-walker/2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz}
-    name: estree-walker
-    version: 2.0.2
-    dev: false
 
   registry.npmjs.org/fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz}
@@ -6568,56 +6245,23 @@ packages:
       safer-buffer: registry.npmjs.org/safer-buffer/2.1.2
     dev: true
 
-  registry.npmjs.org/intersection-observer/0.12.2:
-    resolution: {integrity: sha512-7m1vEcPCxXYI8HqnL8CKI6siDyD+eIWSwgB3DZA+ZTogxk9I4CDnj4wilt9x/+/QbHI4YG5YZNmC6458/e9Ktg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/intersection-observer/-/intersection-observer-0.12.2.tgz}
-    name: intersection-observer
-    version: 0.12.2
-    dev: false
-
-  registry.npmjs.org/is-plain-object/3.0.1:
-    resolution: {integrity: sha512-Xnpx182SBMrr/aBik8y+GuR4U1L9FqMSojwDQwPMmxyC6bvEqly9UBCxhauBF5vNh2gwWJNX6oDV7O+OM4z34g==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/is-plain-object/-/is-plain-object-3.0.1.tgz}
-    name: is-plain-object
-    version: 3.0.1
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   registry.npmjs.org/js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz}
     name: js-tokens
     version: 4.0.0
+    dev: true
 
   registry.npmjs.org/lodash-es/4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz}
     name: lodash-es
     version: 4.17.21
+    dev: true
 
   registry.npmjs.org/lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-
-  registry.npmjs.org/loose-envify/1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz}
-    name: loose-envify
-    version: 1.4.0
-    hasBin: true
-    dependencies:
-      js-tokens: registry.npmjs.org/js-tokens/4.0.0
-    dev: false
-
-  registry.npmjs.org/magic-string/0.25.9:
-    resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/magic-string/-/magic-string-0.25.9.tgz}
-    name: magic-string
-    version: 0.25.9
-    dependencies:
-      sourcemap-codec: registry.npmjs.org/sourcemap-codec/1.4.8
-    dev: false
-
-  registry.npmjs.org/moment/2.29.4:
-    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/moment/-/moment-2.29.4.tgz}
-    name: moment
-    version: 2.29.4
-    dev: false
+    dev: true
 
   registry.npmjs.org/ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/ms/-/ms-2.1.2.tgz}
@@ -6625,52 +6269,17 @@ packages:
     version: 2.1.2
     dev: true
 
-  registry.npmjs.org/nanoid/3.3.6:
-    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz}
-    name: nanoid
-    version: 3.3.6
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: false
-
-  registry.npmjs.org/nanopop/2.3.0:
-    resolution: {integrity: sha512-fzN+T2K7/Ah25XU02MJkPZ5q4Tj5FpjmIYq4rvoHX4yb16HzFdCO6JxFFn5Y/oBhQ8no8fUZavnyIv9/+xkBBw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/nanopop/-/nanopop-2.3.0.tgz}
-    name: nanopop
-    version: 2.3.0
-    dev: false
-
-  registry.npmjs.org/omit.js/2.0.2:
-    resolution: {integrity: sha512-hJmu9D+bNB40YpL9jYebQl4lsTW6yEHRTroJzNLqQJYHm7c+NQnJGfZmIWh8S3q3KoaxV1aLhV6B3+0N0/kyJg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/omit.js/-/omit.js-2.0.2.tgz}
-    name: omit.js
-    version: 2.0.2
-    dev: false
-
   registry.npmjs.org/picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz}
     name: picocolors
     version: 1.0.0
-
-  registry.npmjs.org/postcss/8.4.23:
-    resolution: {integrity: sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/postcss/-/postcss-8.4.23.tgz}
-    name: postcss
-    version: 8.4.23
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: registry.npmjs.org/nanoid/3.3.6
-      picocolors: registry.npmjs.org/picocolors/1.0.0
-      source-map-js: registry.npmjs.org/source-map-js/1.0.2
-    dev: false
+    dev: true
 
   registry.npmjs.org/regenerator-runtime/0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz}
     name: regenerator-runtime
     version: 0.13.11
-
-  registry.npmjs.org/resize-observer-polyfill/1.5.1:
-    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz}
-    name: resize-observer-polyfill
-    version: 1.5.1
-    dev: false
+    dev: true
 
   registry.npmjs.org/safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz}
@@ -6690,14 +6299,6 @@ packages:
     version: 1.2.4
     dev: true
 
-  registry.npmjs.org/scroll-into-view-if-needed/2.2.31:
-    resolution: {integrity: sha512-dGCXy99wZQivjmjIqihaBQNjryrz5rueJY7eHfTdyWEiR4ttYpsajb14rn9s5d4DY4EcY6+4+U/maARBXJedkA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/scroll-into-view-if-needed/-/scroll-into-view-if-needed-2.2.31.tgz}
-    name: scroll-into-view-if-needed
-    version: 2.2.31
-    dependencies:
-      compute-scroll-into-view: registry.npmjs.org/compute-scroll-into-view/1.0.20
-    dev: false
-
   registry.npmjs.org/semver/6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/semver/-/semver-6.3.0.tgz}
     name: semver
@@ -6705,30 +6306,12 @@ packages:
     hasBin: true
     dev: true
 
-  registry.npmjs.org/shallow-equal/1.2.1:
-    resolution: {integrity: sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/shallow-equal/-/shallow-equal-1.2.1.tgz}
-    name: shallow-equal
-    version: 1.2.1
-    dev: false
-
-  registry.npmjs.org/sortablejs/1.14.0:
-    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/sortablejs/-/sortablejs-1.14.0.tgz}
-    name: sortablejs
-    version: 1.14.0
-    dev: false
-
-  registry.npmjs.org/source-map-js/1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz}
-    name: source-map-js
-    version: 1.0.2
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   registry.npmjs.org/source-map/0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz}
     name: source-map
     version: 0.6.1
     engines: {node: '>=0.10.0'}
+    dev: true
 
   registry.npmjs.org/source-map/0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/source-map/-/source-map-0.8.0-beta.0.tgz}
@@ -6739,18 +6322,12 @@ packages:
       whatwg-url: 7.1.0
     dev: true
 
-  registry.npmjs.org/sourcemap-codec/1.4.8:
-    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz}
-    name: sourcemap-codec
-    version: 1.4.8
-    deprecated: Please use @jridgewell/sourcemap-codec instead
-    dev: false
-
   registry.npmjs.org/to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/to-fast-properties/-/to-fast-properties-2.0.0.tgz}
     name: to-fast-properties
     version: 2.0.0
     engines: {node: '>=4'}
+    dev: true
 
   registry.npmjs.org/tslib/2.3.0:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/tslib/-/tslib-2.3.0.tgz}
@@ -6781,64 +6358,3 @@ packages:
     dependencies:
       vue: 3.2.47
     dev: true
-
-  registry.npmjs.org/vue-i18n/9.1.7_vue@3.2.47:
-    resolution: {integrity: sha512-ujuuDanoHqtEd4GejWrbG/fXE9nrP51ElsEGxp0WBHfv+/ki0/wyUqkO+4fLikki2obGtXdviTPH0VNpas5K6g==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/vue-i18n/-/vue-i18n-9.1.7.tgz}
-    id: registry.npmjs.org/vue-i18n/9.1.7
-    name: vue-i18n
-    version: 9.1.7
-    engines: {node: '>= 10'}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      '@intlify/core-base': registry.npmjs.org/@intlify/core-base/9.1.7
-      '@intlify/shared': registry.npmjs.org/@intlify/shared/9.1.7
-      '@intlify/vue-devtools': registry.npmjs.org/@intlify/vue-devtools/9.1.7
-      '@vue/devtools-api': registry.npmjs.org/@vue/devtools-api/6.5.0
-      vue: registry.npmjs.org/vue/3.2.47
-    dev: false
-
-  registry.npmjs.org/vue-types/3.0.2_vue@3.2.47:
-    resolution: {integrity: sha512-IwUC0Aq2zwaXqy74h4WCvFCUtoV0iSWr0snWnE9TnU18S66GAQyqQbRf2qfJtUuiFsBf6qp0MEwdonlwznlcrw==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/vue-types/-/vue-types-3.0.2.tgz}
-    id: registry.npmjs.org/vue-types/3.0.2
-    name: vue-types
-    version: 3.0.2
-    engines: {node: '>=10.15.0'}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      is-plain-object: registry.npmjs.org/is-plain-object/3.0.1
-      vue: registry.npmjs.org/vue/3.2.47
-    dev: false
-
-  registry.npmjs.org/vue/3.2.47:
-    resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/vue/-/vue-3.2.47.tgz}
-    name: vue
-    version: 3.2.47
-    dependencies:
-      '@vue/compiler-dom': registry.npmjs.org/@vue/compiler-dom/3.2.47
-      '@vue/compiler-sfc': registry.npmjs.org/@vue/compiler-sfc/3.2.47
-      '@vue/runtime-dom': registry.npmjs.org/@vue/runtime-dom/3.2.47
-      '@vue/server-renderer': registry.npmjs.org/@vue/server-renderer/3.2.47_vue@3.2.47
-      '@vue/shared': registry.npmjs.org/@vue/shared/3.2.47
-    dev: false
-
-  registry.npmjs.org/vuedraggable/4.1.0_vue@3.2.47:
-    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/vuedraggable/-/vuedraggable-4.1.0.tgz}
-    id: registry.npmjs.org/vuedraggable/4.1.0
-    name: vuedraggable
-    version: 4.1.0
-    peerDependencies:
-      vue: ^3.0.1
-    dependencies:
-      sortablejs: registry.npmjs.org/sortablejs/1.14.0
-      vue: registry.npmjs.org/vue/3.2.47
-    dev: false
-
-  registry.npmjs.org/warning/4.0.3:
-    resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==, registry: http://gitlab.ilabpower.devops/api/v4/projects/78/packages/npm/, tarball: https://registry.npmjs.org/warning/-/warning-4.0.3.tgz}
-    name: warning
-    version: 4.0.3
-    dependencies:
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-    dev: false
