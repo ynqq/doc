@@ -33,7 +33,7 @@ actions:
 import { ref } from "vue";
 import { CustomForm } from "Com";
 import { initStyle } from "utils";
-initStyle("/components/v3/neo-custom-form-next/style.css");
+initStyle("/doc/components/v3/neo-custom-form-next/style.css");
 
 const list = ref([]);
 const log = () => {
