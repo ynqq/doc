@@ -2,6 +2,46 @@
 title: neo-utils
 ---
 
+## Demo <FullScreen/>
+
+::: vue-playground 代码演示 
+
+@file App.vue
+
+```vue
+<script setup>
+import {getNowDate} from 'momentTest'
+const log = () => {
+  console.log(getNowDate());
+};
+</script>
+
+<template>
+  <div @click="log">获取当前日期
+  </div>
+</template>
+```
+
+@import
+
+```json
+{
+  "imports": {
+    "moment": "https://unpkg.com/moment@2.29.4/src/moment.js",
+    "momentTest": "/utils/momentTest/index.js"
+  }
+}
+```
+
+@setting
+
+```json
+{}
+```
+
+:::
+  
+
 ## 工具说明
 
 一个通用的 js 工具类、
