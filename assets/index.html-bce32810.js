@@ -1,0 +1,1 @@
+import{_ as t,X as a,Y as n,Z as e,$ as s}from"./framework-88257335.js";const c={},o=e("h2",{id:"使用说明",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#使用说明","aria-hidden":"true"},"#"),s(" 使用说明")],-1),r=e("p",null,"22222----",-1),_=[o,r];function d(i,l){return a(),n("div",null,_)}const f=t(c,[["render",d],["__file","index.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as n,X as t,Y as c}from"./framework-88257335.js";const s={mounted(){alert(1),document.addEventListener("fullscreenchange",e=>{document.fullscreenElement?document.body.classList.add("fullScreen"):document.body.classList.remove("fullScreen")})}};function o(e,l,r,a,d,u){return t(),c("div",null," 11 ")}const m=n(s,[["render",o],["__file","Event.vue"]]);export{m as default};

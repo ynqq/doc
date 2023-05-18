@@ -1,0 +1,1 @@
+import{_ as s,X as a,Y as n,a4 as _,a5 as o}from"./framework-88257335.js";const r={props:{type:{type:String,default:"warning"}}};function c(e,d,t,p,l,f){return a(),n("span",{class:o(t.type)},[_(e.$slots,"default",{},void 0,!0)],2)}const i=s(r,[["render",c],["__scopeId","data-v-b3e9f7d7"],["__file","Text.vue"]]);export{i as default};

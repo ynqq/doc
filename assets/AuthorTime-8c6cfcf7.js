@@ -1,0 +1,1 @@
+import{_,X as o,Y as s,a3 as t}from"./framework-88257335.js";const a={props:{name:"",time:""}},c={class:"authorTime"};function n(i,r,e,d,m,u){return o(),s("div",c," @ "+t(e.name)+" "+t(e.time),1)}const f=_(a,[["render",n],["__scopeId","data-v-7fd5c548"],["__file","AuthorTime.vue"]]);export{f as default};

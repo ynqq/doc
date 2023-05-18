@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: http://gitlab.ilabpower.devops/qinjiahui/neo-doc/doc/sitemap.xml
