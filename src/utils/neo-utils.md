@@ -28,7 +28,7 @@ const log = () => {
 {
   "imports": {
     "moment": "https://unpkg.com/moment@2.29.4/src/moment.js",
-    "momentTest": "/utils/momentTest/index.js"
+    "momentTest": "/doc/utils/momentTest/index.js"
   }
 }
 ```
